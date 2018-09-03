@@ -77,6 +77,22 @@ Feature vector length: 8460
 0.78 Seconds to train SVC...
 Test Accuracy of SVC =  0.9975
 
+I used the grid search to optimize the SVC's parameters (look test_svc.ipynb)
+I got the result of below.
+
+#Tuning hyper-parameters for precision
+
+Best parameters set found on development set:
+
+{'gamma': 0.0001, 'kernel': 'rbf', 'C': 1}
+
+So, I use the paramters but result is not good.
+
+I change some parameters and set the multi scales for near, mid and far cars.
+
+So it has much time to find the cars but performace is better than before.
+
+
 ![alt text][image5]
 
 And I use Heat Map to choose only one detected box rather than several boxes with svc.
